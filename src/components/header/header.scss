@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding: 25px 0;
   background-color: #fff;
 
@@ -6,13 +7,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include burger-X (30px, 30px, 3px, #a5abbf, 1200px)
+  }
+
+  &_active {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 16;
+      background-color: #2E4FD7;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 20;
   }
 }
 
 .header__logo {
   position: relative;
-  z-index: 11;
+  z-index: 17;
   display: flex;
   align-items: center;
   gap: 10px;
