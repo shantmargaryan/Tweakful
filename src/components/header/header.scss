@@ -1,0 +1,37 @@
+.header {
+  padding: 25px 0;
+  background-color: #fff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include burger-X (30px, 30px, 3px, #a5abbf, 1200px)
+  }
+}
+
+.header__logo {
+  position: relative;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1A1A1A;
+  font-family: Leifa;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.logo__icon {
+  width: 38.75px;
+  height: 51px;
+}
+
+.logo__item {
+  font-family: Leifa;
+  color: #1A1A1A;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+}

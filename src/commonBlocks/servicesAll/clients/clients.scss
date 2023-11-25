@@ -1,0 +1,111 @@
+.clients {
+    padding-top: 120px;
+    padding-bottom: 245px;
+    margin-bottom: 130px;
+    background-color: #052825;
+
+    // .clients__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .clients__title
+
+    &__title {
+        max-width: 730px;
+        margin-bottom: 50px;
+        font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1440 - 320)));
+        text-align: center;
+
+        @media(min-width:1440px) {
+            font-size: 52px;
+        }
+    }
+
+    // .clients__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        @media(min-width:576px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media(min-width:992px) {
+            grid-template-columns: repeat(3, 3fr);
+        }
+    }
+
+    // .clients__item
+
+    &__item {
+        width: 100%;
+        padding: 40px 32px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    // .clients__icon
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 55px;
+    }
+
+    // .clients__small-title
+
+    &__small-title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    // .clients__text
+
+    &__text {
+        max-width: 286px;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    // .clients__btn
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #2E4FD7;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    // .clients__arrow
+
+    &__arrow {
+        width: 16px;
+        height: 16px;
+        fill: #2E4FD7;
+    }
+
+    &__bottom-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 25px;
+        color: #fff;
+        border-radius: 1px;
+        border: 1px solid #FFF;
+    }
+
+    &__bottom-arrow {
+        width: 20px;
+        height: 10px;
+        fill: #fff;
+    }
+}

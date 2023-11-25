@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/servicesAll.css">
+    <title>Tweakful</title>
+</head>
+
+<body class="page__body">
+    @include('./components/header/header.html')
+    <main class="main">
+        @include('commonBlocks/servicesAll/hero/hero.html')
+        @include('commonBlocks/servicesAll/clients/clients.html')
+        @include('commonBlocks/servicesAll/benefits/benefits.html')
+        @include('commonBlocks/servicesAll/team/team.html')
+        @include('components/action/action.html')
+    </main>
+    @include('./components/footer/footer.html')
+
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

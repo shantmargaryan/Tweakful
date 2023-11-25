@@ -1,0 +1,27 @@
+$wrapperWidth: 1440;
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+:root {
+	// base
+	--font-family: "Inter";
+	--content-width: 1110px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--page-background: #fff;
+	--page-backround-home: #052825;
+	--title-dark-color: #191919;
+	--title-light-color: #fff;
+	--text-dark-color: #1E1E1E;
+	--text-gray-color: #18191F;
+	--text-white-color: #fff;
+	--link-dark-color: # #191919;
+	--link-white-color: #fff;
+}

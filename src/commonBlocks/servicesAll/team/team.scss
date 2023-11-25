@@ -1,0 +1,77 @@
+.team {
+    padding-bottom: 125px;
+    // .team__container
+
+    &__container {}
+
+    // .team__title
+
+    &__title {
+        margin-bottom: 60px;
+        font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1440 - 320)));
+
+        @media(min-width:1440px) {
+            font-size: 52px;
+        }
+    }
+
+    // .team__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+
+    // .team__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .team__img
+
+    &__img {
+        width: 255px;
+        height: 255px;
+        margin-bottom: 25px;
+        background: #E7EBFC;
+    }
+
+    // .team__name
+
+    &__name {
+        margin-bottom: 5px;
+        color: #191919;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    // .team__artist
+
+    &__artist {
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    // .team__socials
+
+    &__socials {
+        display: inline-flex;
+        gap: 10px;
+    }
+}
+
+
+.socials {
+
+    // .socials__icon
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+}

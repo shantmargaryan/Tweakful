@@ -1,0 +1,91 @@
+.modern {
+    padding-bottom: 285px;
+
+    // .modern__container
+
+    &__container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 30px;
+        @media(min-width:768px){
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+
+    // .modern__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    // .modern__title
+
+    &__title {
+        width: 10em;
+        margin-bottom: 15px;
+        font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1440 - 320)));
+        @media(min-width:1440px){
+            font-size: 52px;
+        }
+    }
+
+    // .modern__text
+
+    &__text {
+        max-width: 445px;
+        margin-bottom: 30px;
+    }
+
+    // .modern__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 25px;
+        background-color: #2E4FD7;
+    }
+
+    // .modern__arrow
+
+    &__arrow {
+        width: 20px;
+        height: 15px;
+        fill: #fff;
+    }
+
+    // .modern__item
+
+    &__item {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+
+    // .modern__icon
+
+    &__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    // .modern__small-title
+
+    &__small-title {
+        margin-bottom: 7px;
+        font-size: 20px;
+    }
+
+    &__small-text {
+        max-width: 330px;
+        font-size: 16px;
+    }
+}

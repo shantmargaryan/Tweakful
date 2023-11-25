@@ -1,0 +1,82 @@
+.business {
+    padding-bottom: 175px;
+    background-color: #052825;
+    // .business__container
+
+    &__container {}
+
+    // .business__title
+
+    &__title {
+        max-width: 690px;
+        margin-bottom: 80px;
+        font-size: calc(20px + (42 - 20) * ((100vw - 320px) / (1440 - 320)));
+
+        @media(max-width:575px) {
+            text-align: center;
+        }
+    }
+
+    // .business__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @media(max-width:575px) {
+            justify-content: center;
+        }
+    }
+
+    // .business__item
+
+    &__item {
+        max-width: 255px;
+    }
+
+    // .business__icon-box
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__icon {
+        width: 72px;
+        height: 72px;
+    }
+
+    // .business__small-title
+
+    &__small-title {
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    // .business__text
+
+    &__text {
+        font-size: 16px;
+    }
+}
+
+.busniess__dotte_rotate {
+    transform: rotate(-155deg);
+}
+
+.busniess__dotte {
+    width: 164px;
+    height: 35px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0s;
+}
+
+@media(max-width:575px) {
+    .busniess__dotte {
+        opacity: 0;
+    }
+}
