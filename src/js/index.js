@@ -103,7 +103,10 @@ if (benefitsSwiperEl) {
     });
 }
 
-const customSelect = new CustomSelect('select', {
-    turn: true
-});
+const selectElements = document.querySelector("[data-select='select']");
+if (selectElements) {
+    const customSelect = new CustomSelect('select', {
+        turn: true
+    });
+}
 
