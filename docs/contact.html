@@ -115,20 +115,23 @@
                             <input class="form__input" type="email" placeholder="Enter your email">
                         </label>
                     </div>
-                    <label class="form__label">
-                        Choose topic*
-                        <select class="form__select">
-                            <option class="form__option" value="">
-
-                            </option>
-                            <option class="form__option" value="">
-
-                            </option>
-                            <option class="form__option" value="">
-
-                            </option>
-                        </select>
-                    </label>
+                    <div class="select" data-select="select">
+                        <button class="select-btn">
+                            Select one topic
+                        </button>
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button class="select-option" data-select-value="html">html</button>
+                            </li>
+                            <li class="select-item">
+                                <button class="select-option" data-select-value="css">css</button>
+                            </li>
+                            <li class="select-item">
+                                <button class="select-option" data-select-value="js">js</button>
+                            </li>
+                        </ul>
+                        <input class="select-input" hidden name="select-input" type="text">
+                    </div>
                     <label class="form__label">
                         Message*
                         <textarea class="form__textarea" placeholder="Write your message">
@@ -294,6 +297,7 @@
   </div>
 </footer>
 
+    <script src="js/customSelect.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/index.js"></script>
 </body>

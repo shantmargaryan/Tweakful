@@ -100,7 +100,7 @@
 
   &__form-box {
     padding: 90px 30px 25px 30px;
-    min-height: 662px;
+    min-height: 690px;
     background-color: #fff;
     border: 1px solid #B4B4B4;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -144,6 +144,11 @@
     align-items: center;
     gap: 25px;
     margin-bottom: 220px;
+
+    @media(max-width:992px) {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 
   // .contact__icon
@@ -189,7 +194,7 @@
 
   &__input {
     padding: 20px 0 20px 20px;
-    border: 1px solid var(--base-boarder, #B4B4B4);
+    border: 1px solid #B4B4B4;
     font-size: 14px;
   }
 
@@ -211,4 +216,89 @@
     font-weight: 600;
     font-size: 16px;
   }
+}
+
+.select {
+  max-width: 250px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.select-open .select-btn:after {
+  transform: rotate(180deg);
+}
+
+.select-btn {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #B3B1B7;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.select-btn-active {
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.select-btn:after {
+  content: "❯";
+  position: absolute;
+  right: 15px;
+  transform: rotate(90deg);
+  transition: transform .3s ease 0s;
+  color: #424551;
+}
+
+.select-btn-active:after {
+  transform: rotate(270deg);
+}
+
+.select-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.select-list-show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.select-option {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.select-option-selected {
+  background-color: #ccc;
+}
+
+.select-option:hover {
+  background-color: #ccc;
 }

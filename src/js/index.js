@@ -102,3 +102,13 @@ if (benefitsSwiperEl) {
         },
     });
 }
+
+const selectElements = document.querySelector("select");
+if (selectElements) {
+    const customSelect = new CustomSelect('select', {
+        mouseEvent: true,
+        storage: true,
+        turn: true
+    });
+}
+
