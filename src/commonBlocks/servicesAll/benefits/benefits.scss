@@ -77,11 +77,13 @@
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 30px;
         margin-bottom: 185px;
+        gap: 80px;
 
         @media(min-width:768px) {
             flex-direction: row;
+            padding-left: 100px;
+            gap: 30px;
         }
     }
 
@@ -175,6 +177,9 @@
     }
 }
 
+.benefits__swiper .swiper {
+}
+
 .benefits__swiper .swiper-button-prev,
 .swiper-button-next {
     width: calc(30px + (60 - 30) * ((100vw - 320px) / (1440 - 320)));
@@ -182,6 +187,10 @@
     padding: calc(5px + (15 - 5) * ((100vw - 320px) / (1440 - 320)));
     border-radius: 50%;
     background-color: #E7EBFC;
+    top: 40%;
+    @media(min-width:480px){
+        top: 45%;
+    }
 }
 
 @media(min-width:1440px) {
@@ -194,7 +203,9 @@
     }
 }
 
-.benefits__swiper .swiper-button-prev {}
+.benefits__swiper .swiper-button-prev {
+    // position: static;
+}
 
 
 

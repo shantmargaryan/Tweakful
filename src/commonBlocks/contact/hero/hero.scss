@@ -15,6 +15,9 @@
 
     @media(min-width:768px) {
       flex-direction: row;
+    }
+
+    @media(min-width:992px) {
       height: 550px;
     }
   }
@@ -144,11 +147,6 @@
     align-items: center;
     gap: 25px;
     margin-bottom: 220px;
-
-    @media(max-width:992px) {
-      flex-direction: column;
-      align-items: start;
-    }
   }
 
   // .contact__icon
@@ -205,6 +203,8 @@
     max-width: 427px;
     min-height: 122px;
     margin-bottom: 30px;
+    padding-left: 18px;
+    padding-top: 18px;
   }
 
   // .form__btn

@@ -23,7 +23,7 @@
   // .office__title
 
   &__title {
-    font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1440 - 320)));
+    font-size: calc(30px + (52 - 30) * ((100vw - 320px) / (1440 - 320)));
 
     @media(min-width:1440px) {
       font-size: 52px;

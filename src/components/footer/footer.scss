@@ -80,7 +80,10 @@
   }
 
   &__list:last-child {
-    justify-content: end;
+    justify-content: start;
+    @media(min-width:992px){
+      justify-content: end;
+    }
   }
 
   // .footer__list
