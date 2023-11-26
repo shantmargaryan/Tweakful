@@ -1,18 +1,7 @@
-@import "../config.style/vars";
-@import "../config.style/mixin";
-@import "../config.style/global";
-@import "../config.style/mix-class";
-@import "../fonts/fonts";
-@import "../config.style/vars";
-@import "../commonBlocks/page/page";
-@import "../commonBlocks/page/__body/page__body";
-@import "../components/header/header";
-@import "../components/nav/nav";
-@import "../commonBlocks/main/main";
+
 @import "../commonBlocks/home/hero/hero";
 @import "../commonBlocks/home/sample/sample";
 @import "../commonBlocks/home/modern/modern";
 @import "../commonBlocks/home/story/story";
 @import "../commonBlocks/home/business/business";
 @import "../commonBlocks/home/action/action";
-@import "../components/footer/footer";
