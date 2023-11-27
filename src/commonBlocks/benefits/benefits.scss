@@ -1,5 +1,10 @@
 .benefits {
-    padding-bottom: 250px;
+    padding-bottom: 150px;
+
+    @media(min-width:768px) {
+        padding-bottom: 250px;
+    }
+
     // .benefits__container
 
     &__container {}
@@ -9,7 +14,8 @@
     &__title {
         margin-bottom: 40px;
         font-size: calc(20px + (52 - 20) * ((100vw - 320px) / (1440 - 320)));
-        @media(min-width:1440px){
+
+        @media(min-width:1440px) {
             font-size: 52px;
         }
     }
@@ -40,7 +46,8 @@
 
     &__icon {
         width: 72px;
-        @media(max-width:575px){
+
+        @media(max-width:575px) {
             width: 100px;
         }
     }
@@ -51,7 +58,8 @@
     &__small-title {
         margin-bottom: 8px;
         font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
-        @media(min-width:1440px){
+
+        @media(min-width:1440px) {
             font-size: 24px;
         }
     }

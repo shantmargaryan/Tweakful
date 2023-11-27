@@ -1,6 +1,10 @@
 .hero {
     padding-top: 145px;
-    padding-bottom: 280px;
+    padding-bottom: 150px;
+
+    @media(min-width:768px) {
+        padding-bottom: 280px;
+    }
 
     &__box {
         display: flex;
@@ -19,7 +23,7 @@
     &__title {
         width: 10em;
         margin-bottom: 30px;
-        font-size: calc(20px + (64 - 20) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1440 - 320)));
         text-transform: capitalize;
 
         @media(min-width:1440px) {
@@ -32,6 +36,11 @@
     &__text {
         max-width: 635px;
         margin-bottom: 40px;
+        line-height: 130%;
+
+        @media(max-width:575px) {
+            font-size: 16px;
+        }
     }
 
     // .hero__box

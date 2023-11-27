@@ -1,6 +1,9 @@
 .sample {
-    padding-bottom: 220px;
+    padding-bottom: 150px;
     background-color: #052825;
+    @media(min-width:768px){
+        padding-bottom: 220px;
+    }
     // .sample__container
 
     &__container {

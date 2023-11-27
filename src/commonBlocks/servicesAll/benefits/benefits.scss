@@ -53,7 +53,7 @@
 
     &__small-title {
         margin-bottom: 8px;
-        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+        font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1440 - 320)));
 
         @media(min-width:1440px) {
             font-size: 24px;

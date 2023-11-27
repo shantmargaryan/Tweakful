@@ -1,5 +1,8 @@
 .story {
-    padding-bottom: 180px;
+    padding-bottom: 75px;
+    @media(min-width:768px){
+        padding-bottom: 180px;
+    }
 
     // .story__container
 
