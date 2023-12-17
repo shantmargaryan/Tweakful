@@ -1,7 +1,7 @@
 .matters {
     padding: 70px 0;
-    margin-bottom: 190px;
     background-color: #2E4FD7;
+
     // .matters__container
 
     &__container {
@@ -65,7 +65,8 @@
             opacity: 0;
             transition: opacity 0.3s ease 0s;
             background-color: #fff;
-            @media(min-width:768px){
+
+            @media(min-width:768px) {
                 opacity: 0.4;
             }
         }
@@ -84,5 +85,16 @@
     &__samll-title {
         white-space: nowrap;
         font-size: 18px;
+    }
+}
+
+.main__matters {
+    margin-bottom: 50px;
+
+}
+
+@media(min-width:992px) {
+    .main__matters {
+        margin-bottom: 190px;
     }
 }

@@ -1,5 +1,9 @@
 .strategy {
-    padding-bottom: 215px;
+    padding-bottom: 50px;
+
+    @media(min-width:992px){
+        padding-bottom: 215px;
+    }
 
     // .strategy__cintainer
 
@@ -67,7 +71,11 @@
 
     &__arrow-box {
         display: flex;
-        gap: 15px;
+        gap: 25px;
+
+        @media(min-width:576px) {
+            gap: 15px;
+        }
     }
 
     &__title-box {

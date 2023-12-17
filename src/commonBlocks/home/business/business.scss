@@ -1,6 +1,11 @@
 .business {
-    padding-bottom: 175px;
+    padding-bottom: 50px;
     background-color: #052825;
+
+    @media(min-width:992px) {
+        padding-bottom: 175px;
+    }
+
     // .business__container
 
     &__container {}

@@ -12,11 +12,15 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
     padding-bottom: 20px;
     margin-bottom: 55px;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+
+    @media(min-width:768px) {
+      flex-direction: row;
+    }
   }
 
   // .footer__content
@@ -81,7 +85,8 @@
 
   &__list:last-child {
     justify-content: start;
-    @media(min-width:992px){
+
+    @media(min-width:992px) {
       justify-content: end;
     }
   }

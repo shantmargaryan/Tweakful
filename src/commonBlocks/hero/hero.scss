@@ -1,9 +1,10 @@
 .hero {
-    padding-top: 145px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-    @media(min-width:768px) {
+    @media(min-width:992px) {
         padding-bottom: 280px;
+        padding-top: 145px;
     }
 
     &__box {

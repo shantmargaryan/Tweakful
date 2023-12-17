@@ -1,9 +1,11 @@
 .sample {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     background-color: #052825;
-    @media(min-width:768px){
+
+    @media(min-width:992px) {
         padding-bottom: 220px;
     }
+
     // .sample__container
 
     &__container {
@@ -41,7 +43,10 @@
     &__text {}
 
     &__small-text {
-        max-width: 203px;
+
+        @media(min-width:768px) {
+            max-width: 203px;
+        }
     }
 
     // .sample__list
@@ -49,7 +54,12 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 80px;
+
+        @media(min-width:768px) {
+            justify-content: stretch;
+        }
     }
 
     // .sample__number

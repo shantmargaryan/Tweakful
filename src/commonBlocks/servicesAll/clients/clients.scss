@@ -1,8 +1,11 @@
 .clients {
-    padding-top: 120px;
-    padding-bottom: 245px;
-    margin-bottom: 130px;
+    padding: 50px 0;
     background-color: #052825;
+
+    @media(min-width:992px) {
+        padding-top: 120px;
+        padding-bottom: 245px;
+    }
 
     // .clients__container
 
@@ -107,5 +110,15 @@
         width: 20px;
         height: 10px;
         fill: #fff;
+    }
+}
+
+.main__clients {
+    margin-bottom: 50px;
+}
+
+@media(min-width:992px) {
+    .main__clients {
+        margin-bottom: 130px;
     }
 }

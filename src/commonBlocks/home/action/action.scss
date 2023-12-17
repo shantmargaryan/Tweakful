@@ -1,6 +1,11 @@
 .action {
-    padding-bottom: 180px;
+    padding-bottom: 50px;
     background-color: #052825;
+
+    @media(min-width:992px) {
+        padding-bottom: 180px;
+    }
+
     // .action__container
 
     &__container {}

@@ -1,6 +1,11 @@
 .action {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #E7EBFC;
+
+    @media(min-width:992px) {
+        padding: 100px 0a;
+    }
+
     // .action__container
 
     &__container {}
